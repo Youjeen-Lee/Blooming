@@ -1,0 +1,134 @@
+<!-- 주의: policy html은 헤더 분리 안됨! 빠뜨리지말고 챙길 것 -->
+
+<!-- Main Header Nav -->
+<header class="header-nav menu_style_home_one style2 navbar-scrolltofixed stricky main-menu">
+    <div class="container-fluid p0">
+        <!-- Ace Responsive Menu -->
+        <nav>
+            <!-- Menu Toggle btn-->
+            <div class="menu-toggle">
+                <img class="nav_logo_img img-fluid" src="/images/header-logo.svg" alt="header-logo.svg">
+                <button type="button" id="menu-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a href="/main" class="navbar_brand float-left dn-smd">
+                <img class="logo1 img-fluid" src="/images/logo_hand.png" alt="header-logo.svg" style="padding-bottom: 10%;">
+                <img class="logo2 img-fluid" src="/images/logo_hand.png" alt="header-logo2.svg">
+                <span class="main-logo">블루밍</span>
+                <span class="main-logo2">청년활짝! 플랫폼</span>
+            </a>
+            <!-- Responsive Menu Structure-->
+            <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
+                <li><a href="/policy/getPolicyMainPage"><span class="title">청년정책</span></a></li>
+                <li><a href="/job/getJobList"><span class="title">청년일자리</span></a></li>
+
+<!--                <li><a href="#"><span class="title">청년스펙업</span></a></li>-->
+                <li><a href="/store/storeList"><span class="title">청년점포</span></a></li>
+
+                <li><a href="/notice/noticeList"><span class="title">커뮤니티</span></a></li>
+                <li>
+                    <a href="/myPage/myPageHome" class="btn flaticon-avatar" data-toggle="modal" data-target=".bd-example-modal-lg"
+                       th:unless="${#strings.isEmpty(session.SS_USER_ID)}">
+                        <span class="title" th:unless="${#strings.isEmpty(session.SS_USER_ID)}">마이페이지</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="icon">
+                        <span class="title" th:if="${#strings.isEmpty(session.SS_USER_ID)}">
+                            <a href="/user/login">로그인</a>
+                        </span>
+                        <span class="title" th:if="${#strings.isEmpty(session.ACCESS_TOKEN)} and ${!#strings.isEmpty(session.SS_USER_ID)}">
+                            <a href="/user/logout">로그아웃</a>
+                        </span>
+                        <span class="title" th:if="${!#strings.isEmpty(session.ACCESS_TOKEN)} and ${session.ACCESS_KIND == 'KAKAO'}">
+                            <a href="/user/kakaoLogout">로그아웃</a>
+                        </span>
+                        <span class="title" th:if="${!#strings.isEmpty(session.ACCESS_TOKEN)} and ${session.ACCESS_KIND == 'NAVER'}">
+                            <a href="/user/naverLogout">로그아웃</a>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">
+                            <div class="container">
+                                <div class="modal-btn-box">
+                                    <button type="button" id="modal-open"
+                                            class="btn dbxshad btn-lg btn-thm circle white style=">오늘 날씨는?</button>
+                                </div>
+                                <div class="popup-wrap" id="popup">
+                                    <div class="popup">
+                                        <div class="popup-head"></div>
+                                        <div class="popup-body">
+                                            <div class="body-content">
+                                                <div class="body-contentbox">
+                                                    <p style="color: #4e555b; font-size: 20px;">오늘의 날씨는?</p>
+                                                    <p style="color: #4e555b; font-size: 20px;" id="todayOutfit"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="popup-foot">
+                                            <span class="pop-btn confirm" id="confirm">확인</span>
+                                            <span class="pop-btn close"
+                                                  style="font-size:18px!important; color:#ffffff!important; text-decoration:none!important; text-shadow:0 0px 0 #ccc!important;"
+                                                  id="close">창 닫기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Header Nav For Mobile -->
+<div id="page" class="stylehome1 h0">
+    <div class="mobile-menu">
+        <div class="header stylehome1">
+            <div class="main_logo_home2 text-left">
+                <img class="nav_logo_img img-fluid mt15" src="/images/logo_hand.png" alt="header-logo2.svg">
+                <span class="main-logo">블루밍</span>
+            </div>
+            <ul class="menu_bar_home2">
+                <li class="list-inline-item">
+                    <a class="custom_search_with_menu_trigger msearch_icon" href="#" data-toggle="modal"
+                       data-target="#staticBackdrop">
+                        <!--<span class="flaticon-loupe"></span>-->
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="muser_icon" href="page-register.html"><span class="flaticon-avatar"></span></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="menubar" href="#menu"><span></span></a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.mobile-menu -->
+    <nav id="menu" class="stylehome1">
+        <ul>
+            <li><a href="/policy/getPolicyMainPage">청년정책</a></li>
+            <li><a href="/job/getJobList">청년일자리</a></li>
+<!--            <li><a href="page-contact.html">청년스펙업</a></li>-->
+            <li><a href="/store/storeList">청년점포</a></li>
+            <li><a href="/notice/noticeList">커뮤니티</a></li>
+            <li>
+                <a href="/myPage/myPageHome"><span class="flaticon-avatar"
+                                                style="padding-right: 2em!important;"></span> 마이페이지</a>
+            </li>
+            <!--
+            <li><a href="page-register.html"><span class="flaticon-edit"></span> Register</a></li>
+            -->
+            <li class="cl_btn">
+                <a class="btn btn-block btn-lg btn-thm rounded" href="/user/login"
+                   style="color: #6c757d!important;"> <!-- <span class="icon">+</span> --> 로그인</a>
+            </li>
+        </ul>
+    </nav>
+</div>

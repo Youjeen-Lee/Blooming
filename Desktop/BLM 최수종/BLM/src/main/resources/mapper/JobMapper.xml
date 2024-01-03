@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kopo.poly.persistance.mapper.IJobMapper">
+
+    <select id="getCountTable">
+        SELECT COUNT(*)
+        FROM JOB_INFO
+    </select>
+
+    <delete id="truncateJobInfo">
+        DELETE FROM JOB_INFO
+    </delete>
+
+
+    <insert id="insertJobInfo" parameterType="JobDTO">
+        INSERT INTO JOB_INFO
+        (JOB_SEQ,
+         COMPANY_DETAIL_NAME,
+         COMPANY_DETAIL_HREF,
+         POSITION_TITLE,
+         POSITION_JOBMIDCODE_NAME, <!--분야-->
+         POSITION_JOBMIDCODE_CODE,
+         POSITION_LOCATION_NAME, <!--지역-->
+         POSITION_JOBTYPE_NAME,
+         POSITION_EXPERIENCELEVEL_NAME,
+         POSITION_REQUIREDEDUCATIONLEVEL_NAME ,
+         SALARY_NAME,
+         EXPIRATIONDATE,
+         REG_DT
+        )
+        VALUES ((SELECT IFNULL(MAX(A.JOB_SEQ), 0) + 1 FROM JOB_INFO A),
+                #{company_detail_name},
+                #{company_detail_href},
+                #{position_title},
+                #{position_jobMidCode_name},
+                #{position_jobMidCode_Code},
+                #{position_location_name},
+                #{position_jobType_name},
+                #{position_experienceLevel_name},
+                #{position_requiredEducationLevel_name},
+                #{salary_name},
+                #{expirationDate},
+                NOW())
+    </insert>
+
+    <select id="getMainJobList" resultType="JobDTO">
+        SELECT COMPANY_DETAIL_NAME, SUBSTRING(POSITION_LOCATION_NAME, 1, 2) AS POSITION_LOCATION_NAME, JOB_SEQ
+        FROM JOB_INFO
+        ORDER BY REG_DT DESC
+            LIMIT 5;
+    </select>
+
+    <select id="getJobList" resultType="JobDTO">
+        SELECT JOB_SEQ, POSITION_TITLE, COMPANY_DETAIL_NAME, POSITION_LOCATION_NAME, DATE(FROM_UNIXTIME(EXPIRATIONDATE)) AS EXPIRATIONDATE,
+            DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM JOB_INFO
+    </select>
+
+
+
+    <select id="getJobInfo" parameterType="JobDTO" resultType="JobDTO">
+        SELECT *
+        FROM JOB_INFO
+        WHERE JOB_SEQ = #{job_seq}
+    </select>
+
+
+    <!-- 지역 선택 후 일자리 리스트 가져오기 -->
+    <select id="getCountAreaList" parameterType="JobDTO" resultType="JobDTO">
+        SELECT JOB_SEQ, POSITION_TITLE, COMPANY_DETAIL_NAME, POSITION_LOCATION_NAME, DATE(FROM_UNIXTIME(EXPIRATIONDATE)) AS EXPIRATIONDATE,
+            DATE_FORMAT(REG_DT, '%y-%m-%d %H:%i') AS REG_DT
+        FROM JOB_INFO
+        WHERE LEFT(POSITION_LOCATION_NAME, 2) = #{areaCode}
+    </select>
+
+    <!-- 업종 선택 후 일자리 리스트 가져오기 -->
+    <select id="getCountCategoryList" parameterType="JobDTO" resultType="JobDTO">
+        SELECT JOB_SEQ, POSITION_TITLE, COMPANY_DETAIL_NAME, POSITION_LOCATION_NAME, DATE(FROM_UNIXTIME(EXPIRATIONDATE)) AS EXPIRATIONDATE,
+            DATE_FORMAT(REG_DT, '%y-%m-%d %H:%i') AS REG_DT
+        FROM JOB_INFO
+        WHERE POSITION_JOBMIDCODE_CODE = #{position_jobMidCode_Code}
+    </select>
+
+    <!-- 지역 + 업종 선택 후 일자리 리스트 가져오기 -->
+    <select id="getCountOptionList" parameterType="JobDTO" resultType="JobDTO">
+        SELECT JOB_SEQ, POSITION_TITLE, COMPANY_DETAIL_NAME, POSITION_LOCATION_NAME, DATE(FROM_UNIXTIME(EXPIRATIONDATE)) AS EXPIRATIONDATE,
+            DATE_FORMAT(REG_DT, '%y-%m-%d %H:%i') AS REG_DT
+        FROM JOB_INFO
+        WHERE POSITION_JOBMIDCODE_CODE = #{position_jobMidCode_Code} AND LEFT(POSITION_LOCATION_NAME, 2) = #{areaCode}
+    </select>
+
+<!--     지역 분류가 구까지 한꺼번에 옴 우짬...코드도 지역명도 매한가지 like?-->
+<!--    <select id="getJobCategoryList" parameterType="JobDTO" resultType="JobDTO">-->
+<!--        SELECT *-->
+<!--        FROM JOB_INFO-->
+<!--        WHERE POSITION_LOCATION_NAME = #{position_location_name}-->
+<!--    </select>-->
+
+</mapper>

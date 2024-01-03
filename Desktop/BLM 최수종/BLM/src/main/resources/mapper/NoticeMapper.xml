@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="kopo.poly.persistance.mapper.INoticeMapper">
+
+    <!-- 내 작성글 가져오기 -->
+    <select id="getMyNoticeList" parameterType="UserInfoDTO" resultType="NoticeDTO">
+        SELECT TITLE, NOTICE_SEQ, DATE_FORMAT(REG_DT, '%Y-%m-%d') AS REG_DT
+        FROM NOTICE
+        WHERE USER_ID = #{user_id}
+        ORDER BY REG_DT DESC
+    </select>
+
+    <!-- 메인페이지 블럭에 띄울 최신글 10개 가져오기 -->
+    <select id="getMainNoticeList" resultType="NoticeDTO">
+        SELECT TITLE, NOTICE_SEQ, DATE_FORMAT(REG_DT, '%Y-%m-%d') AS REG_DT
+        FROM NOTICE
+        ORDER BY REG_DT DESC
+        LIMIT 5;
+    </select>
+
+    <!-- 조회수순으로 가져오기 -->
+    <select id="getSortByViewCount" resultType="NoticeDTO">
+        SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM NOTICE
+        ORDER BY READ_CNT DESC
+    </select>
+
+    <!-- 최신순으로 가져오기 -->
+    <select id="getSortByDate" resultType="NoticeDTO">
+        SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM NOTICE
+        ORDER BY REG_DT DESC
+    </select>
+
+    <!-- 지역별로 가져오기 -->
+    <select id="getListByArea" parameterType="NoticeDTO" resultType="NoticeDTO">
+        SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM NOTICE
+        WHERE USER_AREA = #{user_area}
+        ORDER BY REG_DT DESC
+    </select>
+
+    <!-- 게시판 리스트 쿼리 -->
+    <select id="getNoticeList" resultType="NoticeDTO">
+        SELECT NOTICE_SEQ, TITLE,  READ_CNT, USER_ID, USER_AREA,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM NOTICE
+        ORDER BY NOTICE_SEQ DESC
+    </select>
+
+    <!-- 게시판 등록 쿼리 -->
+    <insert id="insertNoticeInfo" parameterType="NoticeDTO">
+        INSERT INTO NOTICE
+        (
+            NOTICE_SEQ, TITLE,  CONTENTS, USER_ID, READ_CNT,
+            REG_DT, CHG_ID, CHG_DT, USER_AREA
+        )
+        VALUES(
+                      (SELECT IFNULL(MAX(A.NOTICE_SEQ),0)+1 FROM NOTICE A),
+                      #{title},  #{contents}, #{user_id}, 0, NOW(), #{user_id}, NOW(), #{user_area}
+              )
+    </insert>
+
+    <!-- 게시판 상세보기 쿼리 -->
+    <select id="getNoticeInfo" resultType="NoticeDTO">
+        SELECT NOTICE_SEQ, TITLE,  READ_CNT, USER_ID, USER_AREA,
+               CONTENTS, DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM NOTICE
+        WHERE NOTICE_SEQ = #{notice_seq}
+    </select>
+
+    <!-- 조회수 증가 쿼리 -->
+    <update id="updateNoticeReadCnt" parameterType="NoticeDTO">
+        UPDATE NOTICE SET
+            READ_CNT = READ_CNT + 1
+        WHERE
+            NOTICE_SEQ = #{notice_seq}
+    </update>
+
+    <!-- 게시판 수정 쿼리 -->
+    <update id="updateNoticeInfo" parameterType="NoticeDTO">
+        UPDATE NOTICE SET
+                          TITLE = #{title},
+                          CONTENTS = #{contents},
+                          CHG_DT = NOW()
+        WHERE
+            NOTICE_SEQ = #{notice_seq}
+
+    </update>
+
+    <!-- 게시판 삭제 쿼리 -->
+    <delete id="deleteNoticeInfo" parameterType="NoticeDTO">
+        DELETE FROM NOTICE
+        WHERE NOTICE_SEQ = #{notice_seq}
+    </delete>
+
+</mapper>

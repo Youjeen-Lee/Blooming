@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="kopo.poly.persistance.mapper.IStoreMapper">
+
+    <insert id="insertStoreInfo" parameterType="StoreDTO">
+        INSERT INTO STORE_INFO
+        (STORE_SEQ,
+         USER_ID,
+         STORE_NAME,
+         STORE_OWNER_NAME,
+         STORE_INTRODUCE,
+         STORE_MAIN_PHOTO,
+         STORE_SUB_PHOTO_ONE,
+         STORE_SUB_PHOTO_TWO,
+         STORE_SUB_PHOTO_THREE,
+         STORE_ADDR,
+         STORE_ADDR2,
+         STORE_CALL,
+         REG_DT)
+        VALUES ((SELECT IFNULL(MAX(A.STORE_SEQ), 0) + 1 FROM STORE_INFO A),
+                #{user_id}, #{store_name}, #{store_owner_name}, #{store_introduce}, #{store_main_photo},
+                #{store_sub_photo_one}, #{store_sub_photo_two}, #{store_sub_photo_three}, #{store_addr},
+                #{store_addr2}, #{store_call}, NOW())
+    </insert>
+
+    <select id="getStoreList" resultType="StoreDTO">
+        SELECT *
+        FROM STORE_INFO
+    </select>
+
+    <select id="getStoreInfo" parameterType="StoreDTO" resultType="StoreDTO">
+        SELECT *
+        FROM STORE_INFO
+        WHERE STORE_SEQ = #{store_seq}
+    </select>
+
+    <select id="getMainStoreInfo" resultType="StoreDTO">
+        SELECT *
+        FROM STORE_INFO
+        ORDER BY REG_DT DESC
+        LIMIT 1
+    </select>
+
+</mapper>

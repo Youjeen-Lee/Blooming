@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실시간 날씨 조회하기</title>
+    <link rel="stylesheet" href="/css/table.css"/>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            let lon, lat;
+
+            navigator.geolocation.getCurrentPosition(function (position) {
+                lat = position.coords.latitude; // 위도
+                lon = position.coords.longitude; // 경도
+
+                $.ajax({
+                    url: "/weather/getWeather",
+                    type: "get",
+                    dataType: "JSON",
+                    data: {
+                        "lon": lon,
+                        "lat": lat
+
+                    },
+                    success: function (json) {
+                        let currentTemp = json.currentTemp;
+                        $("#currentTemp").append(currentTemp);
+
+
+                        let msg = '';
+                        if (currentTemp <= 5) {
+                            msg = "오늘 날씨가 너무 춥네요!" + currentTemp + "도 네요. \n두꺼운 패딩과 목도리, 장갑, 귀마개 같은 거 착용하면 좋을 거에요!";
+                        } else if (currentTemp <= 8) {
+                            msg = "오늘은 추워요." + currentTemp + "도 네요. \n패딩, 목도리, 장갑, 귀마개 같은 거 꺼내서 입으면 좋을 거 같아요.";
+                        } else if (currentTemp <= 11) {
+                            msg = "오늘은 으슬으슬하네요." + currentTemp + "도 네요. \n외투 착용 필수! 코트 입기 딱 좋은 날씨에요!";
+                        } else if (currentTemp <= 16) {
+                            msg = "오늘은 쌀쌀한 날씨에요." + currentTemp + "도 네요. \n일교차가 있으니 얇은 외투를 챙기는게 좋아요~";
+                        } else if (currentTemp <= 19) {
+                            msg = "오늘은 선선한 날씨네요." + currentTemp + "도 네요. \n자켓이나 가디건 같은 걸 입으면 좋을 거 같아요.";
+                        } else if (currentTemp <= 22) {
+                            msg = "오늘은 따뜻한 날씨에요." + currentTemp + "도 네요. \n가벼운 옷 하나 준비하고 입으면 좋을 거 같아요.";
+                        } else if (currentTemp <= 27) {
+                            msg = "오늘은 더운 날씨네요." + currentTemp + "도 네요. \n가볍고 시원한 옷을 입으면 좋을 거 같아요.";
+                        } else {
+                            msg = "오늘은" + currentTemp + "도 네요. \n여유를 가지고 창문을 열어 날씨를 확인해보세요! 무엇을 입을까요?";
+                        }
+                        $("#todayOutfit").append(msg);
+
+                        // const dailyList = json.dailyList; // List 구조의 일별 날씨 정보
+                        //
+                        // for (const daily of dailyList) {
+                        //
+                        //     let day = daily.day; // 기준 일자
+                        //     let sunrise = daily.sunrise; // 해뜨는 시간
+                        //     let sunset = daily.sunset; // 해지는 시간
+                        //     let moonrise = daily.moonrise; // 달뜨는 시간
+                        //     let moonset = daily.moonset; // 달지는 시간
+                        //     let dayTemp = daily.dayTemp; // 평균 기온
+                        //     let dayTempMax = daily.dayTempMax; // 최고 기온
+                        //     let dayTempMin = daily.dayTempMin; // 최저 기온
+                        //     let icon = "https://openweathermap.org/img/wn/"+ daily.icon + "@2x.png";
+                        //     console.log("아이콘 :" + icon);
+                        //
+                        //     $("#daily_weather").append("<div class=\"divTableRow\">");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + day + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + sunrise + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + sunset + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + moonrise + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + moonset + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + dayTemp + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + dayTempMax + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\">" + dayTempMin + " </div>");
+                        //     $("#daily_weather").append("<div class=\"divTableCell\"><img src=\"" + icon + "\"></div>");
+                        //     $("#daily_weather").append("</div>");
+                        //
+                        //
+                        // }
+                    }
+                });
+            });
+        })
+    </script>
+
+
+
+    </head>
+<body>
+<h2>오늘의 날씨는?</h2>
+<hr/>
+<br/>
+<div class="divTable minimalistBlack">
+    <div class="divTableHeading">
+        <div class="divTableRow">
+
+            <div class="divTableCell" style="width: 20%">현재 기온</div>
+            <div class="divTableCell" style="width: 40%" id="currentTemp"></div>
+
+        </div>
+<!--        <div class="divTableRow">-->
+<!--            <div class="divTableCell" style="width: 20%">추천 옷차림</div>-->
+<!--            <div class="divTableCell" style="width: 40%" id="todayOutfit"></div>-->
+<!--        </div>-->
+    </div>
+</div>
+<br/><br/>
+<h2>주간 날씨 실시간 조회</h2>
+<hr/>
+<br/>
+<div class="divTable minimalistBlack">
+    <div class="divTableHeading">
+        <div class="divTableRow">
+            <div class="divTableHead">날짜</div>
+            <div class="divTableHead">해뜨는 시간</div>
+            <div class="divTableHead">해지는 시간</div>
+            <div class="divTableHead">달뜨는 시간</div>
+            <div class="divTableHead">달지는 시간</div>
+            <div class="divTableHead">평균 기온</div>
+            <div class="divTableHead">최고 기온</div>
+            <div class="divTableHead">최저 기온</div>
+            <div class="divTableHead">날씨 아이콘</div>
+        </div>
+    </div>
+    <div class="divTableBody" id="daily_weather">
+    </div>
+</div>
+</body>
+</html>

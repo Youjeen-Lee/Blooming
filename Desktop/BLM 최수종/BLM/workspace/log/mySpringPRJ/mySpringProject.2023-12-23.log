@@ -1,0 +1,708 @@
+2023-12-23 11:52:10 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 21861 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 11:52:10 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 11:52:14 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.089 seconds (JVM running for 6.218)
+2023-12-23 11:52:42 [INFO ] kopo.poly.controller.MainController - kopo.poly.controller.MainController블루밍 서비스 메인화면 호출 시작합니다.
+2023-12-23 11:52:42 [INFO ] k.poly.service.impl.PolicyService2 - kopo.poly.service.impl.PolicyService2메인 페이지에 띄울 최신 정책 10개 호출합니다.
+2023-12-23 11:52:42 [INFO ] kopo.poly.service.impl.JobService - kopo.poly.service.impl.JobService메인 페이지에 띄울 최신 일자리 10개 호출합니다.
+2023-12-23 11:52:42 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService메인페이지에 띄울 최신글 10개 호출합니다.
+2023-12-23 11:52:42 [INFO ] kopo.poly.service.impl.StoreService - kopo.poly.service.impl.StoreService.청년점포 메인에 띄울 가게 정보 호출합니다.
+2023-12-23 11:52:42 [INFO ] kopo.poly.service.impl.StoreService - kopo.poly.service.impl.StoreService.청년점포 메인에 띄울 가게 정보 호출 종료합니다.
+2023-12-23 11:52:42 [INFO ] kopo.poly.controller.MainController - kopo.poly.controller.MainController블루밍 서비스 메인화면 호출 종료합니다.
+2023-12-23 11:52:46 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 11:52:46 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 11:52:46 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 11:52:57 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 11:52:57 [INFO ] k.poly.controller.NoticeController - notice_seq : 31
+2023-12-23 11:52:57 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 11:52:57 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 11:52:57 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 11:52:58 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 11:52:58 [INFO ] k.poly.controller.CommentController - notice_seq : 31
+2023-12-23 11:52:58 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 11:52:58 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 0
+2023-12-23 11:52:58 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 11:53:06 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 11:53:06 [INFO ] k.poly.controller.NoticeController - notice_seq : 30
+2023-12-23 11:53:06 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 11:53:06 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 11:53:06 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 11:53:07 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 11:53:07 [INFO ] k.poly.controller.CommentController - notice_seq : 30
+2023-12-23 11:53:07 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 11:53:07 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 11:53:07 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 11:53:16 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 11:53:16 [INFO ] k.poly.controller.NoticeController - notice_seq : 27
+2023-12-23 11:53:16 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 11:53:16 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 11:53:16 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 11:53:17 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 11:53:17 [INFO ] k.poly.controller.CommentController - notice_seq : 27
+2023-12-23 11:53:17 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 11:53:17 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 0
+2023-12-23 11:53:17 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 11:53:54 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 11:53:54 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 11:53:54 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:33:42 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23110 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:33:42 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:33:45 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.569 seconds (JVM running for 5.152)
+2023-12-23 21:33:49 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:33:49 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:33:49 [INFO ] k.poly.controller.NoticeController - [kopo.poly.dto.NoticeDTO@440592, kopo.poly.dto.NoticeDTO@3bf8ccb8, kopo.poly.dto.NoticeDTO@6f284d80, kopo.poly.dto.NoticeDTO@38170e25, kopo.poly.dto.NoticeDTO@185ff420, kopo.poly.dto.NoticeDTO@653f669f, kopo.poly.dto.NoticeDTO@485673f5, kopo.poly.dto.NoticeDTO@48b02afc, kopo.poly.dto.NoticeDTO@2fa9293e, kopo.poly.dto.NoticeDTO@31bca9ca, kopo.poly.dto.NoticeDTO@4a0eadd3, kopo.poly.dto.NoticeDTO@32099a4, kopo.poly.dto.NoticeDTO@6526a027, kopo.poly.dto.NoticeDTO@3180b7b0, kopo.poly.dto.NoticeDTO@e5ff466, kopo.poly.dto.NoticeDTO@9b5a1b0, kopo.poly.dto.NoticeDTO@59421f39, kopo.poly.dto.NoticeDTO@6dcb0e96, kopo.poly.dto.NoticeDTO@1cc63b8d, kopo.poly.dto.NoticeDTO@38dab184, kopo.poly.dto.NoticeDTO@71a8da71, kopo.poly.dto.NoticeDTO@4422c56c, kopo.poly.dto.NoticeDTO@69959436]
+2023-12-23 21:33:49 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:34:23 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23122 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:34:23 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:34:26 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.962 seconds (JVM running for 4.256)
+2023-12-23 21:34:28 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:34:28 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:34:28 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@27f5768d
+2023-12-23 21:34:28 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:35:57 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23141 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:35:57 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:35:59 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.674 seconds (JVM running for 4.188)
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:36:03 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@6c061731
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@4ae24880
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@21f3c641
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@26607bce
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@7a835fac
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@227dbe34
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@1d03b5f4
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@38981391
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@58864511
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@17c5cc2b
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@17e97732
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@6f95fac5
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@5d184eb
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@3c4cb4ee
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@60c004b2
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@20c389bd
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@29bcb792
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@700e9d8f
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@100be2a8
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@2c391f75
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@60f53d47
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@64132633
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.dto.NoticeDTO@2bc286bb
+2023-12-23 21:36:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:36:31 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23151 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:36:31 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:36:33 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.261 seconds (JVM running for 4.61)
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:36:35 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:36:35 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:38:08 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23169 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:38:08 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:38:10 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.727 seconds (JVM running for 4.487)
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:38:13 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - null
+2023-12-23 21:38:13 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:40:13 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23215 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:40:13 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:40:16 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.008 seconds (JVM running for 4.87)
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:40:18 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:40:18 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:40:33 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:40:33 [INFO ] k.poly.controller.NoticeController - 지역 : 대구
+2023-12-23 21:40:33 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:40:33 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:43:02 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23248 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:43:02 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:43:06 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.116 seconds (JVM running for 6.83)
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:43:12 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:43:12 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:45:11 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23272 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:45:11 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:45:18 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 7.642 seconds (JVM running for 9.53)
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:45:19 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:45:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:45:31 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 최신순(getSortByDate) 컨트롤러 요청 받았습니다.
+2023-12-23 21:45:31 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService커뮤니티글 최신순 정렬 호출합니다.
+2023-12-23 21:45:31 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 최신순(getSortByDate) 컨트롤러 요청 종료합니다.
+2023-12-23 21:45:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 조회수순(getSortByViewCount) 컨트롤러 요청 받았습니다.
+2023-12-23 21:45:34 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService커뮤니티글 조회수순 정렬 호출합니다.
+2023-12-23 21:45:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 조회수순(getSortByViewCount) 컨트롤러 요청 종료습니다.
+2023-12-23 21:45:45 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:45:45 [INFO ] k.poly.controller.NoticeController - 지역 : 대구
+2023-12-23 21:45:45 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:45:45 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:45:47 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:45:47 [INFO ] k.poly.controller.NoticeController - 지역 : 부산
+2023-12-23 21:45:47 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:45:47 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:45:49 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:45:49 [INFO ] k.poly.controller.NoticeController - 지역 : 인천
+2023-12-23 21:45:49 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:45:49 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:48:51 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23317 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:48:51 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:48:56 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 6.306 seconds (JVM running for 7.936)
+2023-12-23 21:49:13 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23325 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:49:13 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:49:17 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.828 seconds (JVM running for 7.498)
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:49:27 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:49:27 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:49:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 최신순(getSortByDate) 컨트롤러 요청 받았습니다.
+2023-12-23 21:49:34 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService커뮤니티글 최신순 정렬 호출합니다.
+2023-12-23 21:49:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 최신순(getSortByDate) 컨트롤러 요청 종료합니다.
+2023-12-23 21:49:36 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 조회수순(getSortByViewCount) 컨트롤러 요청 받았습니다.
+2023-12-23 21:49:36 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService커뮤니티글 조회수순 정렬 호출합니다.
+2023-12-23 21:49:36 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티글 조회수순(getSortByViewCount) 컨트롤러 요청 종료습니다.
+2023-12-23 21:49:38 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:49:38 [INFO ] k.poly.controller.NoticeController - 지역 : 부산
+2023-12-23 21:49:38 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:49:38 [INFO ] k.poly.controller.NoticeController - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+### The error may exist in file [/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes/mapper/NoticeMapper.xml]
+### The error may involve kopo.poly.persistance.mapper.INoticeMapper.getListByArea-Inline
+### The error occurred while setting parameters
+### SQL: SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA                TO_CHAR(REG_DT, 'YYYY-MM-DD') AS REG_DT         FROM NOTICE         WHERE USER_AREA = ?         ORDER BY REG_DT DESC
+### Cause: java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+2023-12-23 21:49:38 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:49:41 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:49:41 [INFO ] k.poly.controller.NoticeController - 지역 : 대구
+2023-12-23 21:49:41 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:49:41 [INFO ] k.poly.controller.NoticeController - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+### The error may exist in file [/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes/mapper/NoticeMapper.xml]
+### The error may involve kopo.poly.persistance.mapper.INoticeMapper.getListByArea-Inline
+### The error occurred while setting parameters
+### SQL: SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA                TO_CHAR(REG_DT, 'YYYY-MM-DD') AS REG_DT         FROM NOTICE         WHERE USER_AREA = ?         ORDER BY REG_DT DESC
+### Cause: java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: (conn=58219) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+2023-12-23 21:49:41 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:51:10 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23347 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:51:10 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:51:12 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.947 seconds (JVM running for 4.82)
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:51:32 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:51:32 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:51:36 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:51:36 [INFO ] k.poly.controller.NoticeController - 지역 : 부산
+2023-12-23 21:51:36 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:51:36 [INFO ] k.poly.controller.NoticeController - org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=58230) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+### The error may exist in file [/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes/mapper/NoticeMapper.xml]
+### The error may involve kopo.poly.persistance.mapper.INoticeMapper.getListByArea-Inline
+### The error occurred while setting parameters
+### SQL: SELECT NOTICE_SEQ, TITLE, CONTENTS, USER_ID, READ_CNT, USER_AREA                TO_CHAR(REG_DT, 'YYYY-MM-DD') AS REG_DT         FROM NOTICE         WHERE USER_AREA = ?         ORDER BY REG_DT DESC
+### Cause: java.sql.SQLSyntaxErrorException: (conn=58230) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: (conn=58230) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(REG_DT, 'YYYY-MM-DD') AS REG_DT
+2023-12-23 21:51:36 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:53:58 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23376 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:53:58 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:54:02 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.016 seconds (JVM running for 5.511)
+2023-12-23 21:54:05 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23382 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:54:05 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:54:08 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.895 seconds (JVM running for 4.026)
+2023-12-23 21:54:11 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 21:54:11 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 21:54:12 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 21:54:16 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:54:16 [INFO ] k.poly.controller.NoticeController - 지역 : 부산
+2023-12-23 21:54:16 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:54:16 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:54:18 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:54:18 [INFO ] k.poly.controller.NoticeController - 지역 : 대구
+2023-12-23 21:54:18 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:54:18 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:54:21 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 받았습니다.
+2023-12-23 21:54:21 [INFO ] k.poly.controller.NoticeController - 지역 : 인천
+2023-12-23 21:54:21 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService지역별 글 호출합니다.
+2023-12-23 21:54:21 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.커뮤니티 지역별 작성글, 컨트롤러 호출 종료합니다.
+2023-12-23 21:54:22 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:54:22 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:54:22 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:54:22 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:54:22 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:54:22 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:54:22 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:54:22 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:54:22 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:54:22 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:56:21 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23410 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:56:21 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:56:28 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 7.682 seconds (JVM running for 9.851)
+2023-12-23 21:56:29 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:56:29 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:56:29 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:56:29 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:56:29 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:56:31 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:56:31 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:56:31 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:56:31 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:56:31 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:57:22 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23424 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:57:22 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:57:27 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 6.024 seconds (JVM running for 7.845)
+2023-12-23 21:57:28 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:57:28 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:57:28 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:57:28 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:57:28 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:57:29 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:57:29 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:57:29 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:57:29 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:57:29 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:57:44 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23434 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:57:44 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:57:48 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.076 seconds (JVM running for 6.694)
+2023-12-23 21:57:54 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:57:54 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:57:54 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:57:54 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:57:54 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:57:55 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:57:55 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:57:55 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:57:55 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:57:55 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:58:17 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23442 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:58:17 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:58:21 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.586 seconds (JVM running for 6.352)
+2023-12-23 21:58:27 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23448 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:58:27 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:58:33 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 6.311 seconds (JVM running for 8.079)
+2023-12-23 21:58:33 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:58:33 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:58:33 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:58:33 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:58:33 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:58:34 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:58:34 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:58:34 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:58:34 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:58:34 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:58:51 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23473 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:58:51 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:58:55 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.224 seconds (JVM running for 6.98)
+2023-12-23 21:58:58 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:58:58 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:58:58 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:58:58 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:58:58 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:58:59 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:58:59 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:58:59 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:58:59 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:58:59 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:59:14 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23480 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:59:14 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:59:18 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.536 seconds (JVM running for 7.133)
+2023-12-23 21:59:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:59:19 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:59:19 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:59:19 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:59:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:59:20 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:59:20 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:59:20 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:59:20 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:59:20 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 21:59:35 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23490 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 21:59:35 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 21:59:40 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.926 seconds (JVM running for 7.755)
+2023-12-23 21:59:41 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 21:59:41 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 21:59:41 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 21:59:41 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 21:59:41 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 21:59:42 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 21:59:42 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 21:59:42 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 21:59:42 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 21:59:42 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:00:08 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23500 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:00:08 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:00:14 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 6.564 seconds (JVM running for 8.23)
+2023-12-23 22:00:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:00:19 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 22:00:19 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:00:19 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:00:19 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:00:20 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:00:20 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 22:00:20 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:00:20 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:00:20 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:00:40 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23511 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:00:40 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:00:44 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.997 seconds (JVM running for 6.827)
+2023-12-23 22:00:46 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:00:46 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 22:00:46 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:00:46 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:00:46 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:00:48 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:00:48 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 22:00:48 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:00:48 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:00:48 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:01:38 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23527 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:01:38 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:01:42 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.63 seconds (JVM running for 6.582)
+2023-12-23 22:01:58 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23543 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:01:58 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:02:03 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 5.905 seconds (JVM running for 7.982)
+2023-12-23 22:02:03 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:02:03 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 22:02:03 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:02:03 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:02:04 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:02:05 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:02:05 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 22:02:05 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:02:05 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:02:05 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:02:17 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23553 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:02:17 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:02:21 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.785 seconds (JVM running for 5.803)
+2023-12-23 22:02:23 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:02:23 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 22:02:23 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:02:23 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:02:23 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:02:25 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:02:25 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 22:02:25 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:02:25 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:02:25 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:02:27 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:02:27 [INFO ] k.poly.controller.NoticeController - notice_seq : 12
+2023-12-23 22:02:27 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:02:27 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:02:27 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:02:28 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:02:28 [INFO ] k.poly.controller.CommentController - notice_seq : 12
+2023-12-23 22:02:28 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:02:28 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:02:28 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 22:02:29 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 22:02:29 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 22:02:31 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:02:31 [INFO ] k.poly.controller.NoticeController - notice_seq : 30
+2023-12-23 22:02:31 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:02:31 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:02:31 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:02:31 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:02:31 [INFO ] k.poly.controller.CommentController - notice_seq : 30
+2023-12-23 22:02:31 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:02:31 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 1
+2023-12-23 22:02:31 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList Start!
+2023-12-23 22:02:34 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeList start!
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 제주
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 세종
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 경남
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 경북
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 전남
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 전북
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 충남
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 충북
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 강원
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 경기
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 울산
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 대전
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 광주
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 대구
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 부산
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 인천
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - 대전
+
+2023-12-23 22:02:34 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeList End!
+2023-12-23 22:02:35 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo Start!
+2023-12-23 22:02:35 [INFO ] k.poly.controller.NoticeController - notice_seq : 31
+2023-12-23 22:02:35 [INFO ] kopo.poly.service.impl.NoticeService - kopo.poly.service.impl.NoticeService.getNoticeInfo start!
+2023-12-23 22:02:35 [INFO ] kopo.poly.service.impl.NoticeService - Update ReadCNT
+2023-12-23 22:02:35 [INFO ] k.poly.controller.NoticeController - kopo.poly.controller.NoticeController.noticeInfo End!
+2023-12-23 22:02:36 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList Start!
+2023-12-23 22:02:36 [INFO ] k.poly.controller.CommentController - notice_seq : 31
+2023-12-23 22:02:36 [INFO ] k.poly.service.impl.CommentService - kopo.poly.service.impl.CommentService.getCommentList start!
+2023-12-23 22:02:36 [INFO ] k.poly.controller.CommentController - 조회된 댓글 수 : 0
+2023-12-23 22:02:36 [INFO ] k.poly.controller.CommentController - kopo.poly.controller.CommentController.getCommentList End!
+2023-12-23 22:03:33 [INFO ] k.poly.controller.UserInfoController - kopo.poly.controller.UserInfoController로그인 시작!
+2023-12-23 22:03:33 [INFO ] k.poly.controller.UserInfoController - kopo.poly.controller.UserInfoController로그인 끝!
+2023-12-23 22:03:36 [INFO ] k.poly.controller.UserInfoController - kopo.poly.controller.UserInfoController.회원가입화면 맵핑 시작
+2023-12-23 22:03:36 [INFO ] k.poly.controller.UserInfoController - kopo.poly.controller.UserInfoController.회원가입화면 맵핑 끝
+2023-12-23 22:05:40 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23594 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:05:40 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:05:42 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.71 seconds (JVM running for 3.657)
+2023-12-23 22:05:57 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:16:45 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23693 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:16:45 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:16:48 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.605 seconds (JVM running for 5.41)
+2023-12-23 22:16:50 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:18:39 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23718 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:18:39 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:18:41 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.054 seconds (JVM running for 4.937)
+2023-12-23 22:18:50 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:19:17 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:20:39 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23739 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:20:39 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:20:42 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.936 seconds (JVM running for 4.458)
+2023-12-23 22:20:43 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:22:53 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23765 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:22:53 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:22:56 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.261 seconds (JVM running for 5.343)
+2023-12-23 22:23:00 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:24:03 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23779 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:24:03 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:24:05 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.169 seconds (JVM running for 4.409)
+2023-12-23 22:24:14 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:26:31 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23828 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:26:31 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:26:34 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.09 seconds (JVM running for 5.364)
+2023-12-23 22:26:43 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:30:49 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23892 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:30:49 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:30:52 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.133 seconds (JVM running for 4.94)
+2023-12-23 22:30:55 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:32:40 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23915 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:32:40 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:32:43 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.416 seconds (JVM running for 5.372)
+2023-12-23 22:32:48 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:34:01 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 23940 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:34:01 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:34:05 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.29 seconds (JVM running for 6.19)
+2023-12-23 22:34:06 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:44:21 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 24052 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:44:21 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:44:24 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 2.803 seconds (JVM running for 4.55)
+2023-12-23 22:44:59 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 24062 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:44:59 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:45:02 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 3.086 seconds (JVM running for 5.031)
+2023-12-23 22:45:09 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.
+2023-12-23 22:48:36 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 24093 (/Users/soyoung/Desktop/멋진김소영/영진이네/BLM/target/classes started by soyoung in /Users/soyoung/Desktop/멋진김소영/영진이네/BLM)
+2023-12-23 22:48:36 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-23 22:48:39 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 4.064 seconds (JVM running for 5.838)
+2023-12-23 22:48:45 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.청년점포 등록 페이지로 이동 컨트롤러 실행합니다.

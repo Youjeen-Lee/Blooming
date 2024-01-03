@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kopo.poly.persistance.mapper.IPolicyMapper">
+
+
+    <!-- API 호출 전 데이터베이스 비우기 -->
+    <delete id="truncatePolicyInfo">
+        DELETE FROM POLY_INFO
+    </delete>
+
+    <!-- 데이터베이스 내 저장된 정책 개수 조회 -->
+    <select id="checkPolicyData">
+        SELECT COUNT(*)
+        FROM POLY_INFO
+    </select>
+
+    <!-- API 호출 후 값 데이터베이스에 저장 -->
+    <insert id="insertPolicyInfo" parameterType="ApiResultDTO">
+        INSERT INTO POLY_INFO
+        (SEQ,
+         RNUM,
+         BIZ_ID,
+         POLY_BIZ_SECD,
+         POLY_BIZ_TY,
+         POLY_BIZ_SJNM,
+         POLY_ITCN_CN,
+         SPOR_SCVL,
+         SPOR_CN,
+         AGE_INFO,
+         EMPM_STTS_CN,
+         ACCR_RQIS_CN,
+         MAJR_RQIS_CN,
+         SPLZ_RLM_RQIS_CN,
+         PRCP_CN,
+         PRCP_LMTT_TRGT_CN,
+         CNSG_NMOR,
+         RQUT_PRD_CN,
+         RQUT_PROC_CN,
+         PSTN_PAPR_CN,
+         JDGN_PRES_CN,
+         RQUT_URLA,
+         REG_DT,
+         POLY_RLM_CD,
+         SRCH_POLY_BIZ_SECD
+         )
+        VALUES ((SELECT IFNULL(MAX(A.SEQ), 0) + 1 FROM POLY_INFO A),
+                #{rnum},
+                #{biz_id},
+                #{poly_biz_secd},
+                #{poly_biz_ty},
+                #{poly_biz_sjnm},
+                #{poly_itcn_cn},
+                #{spor_scvl},
+                #{spor_cn},
+                #{age_info},
+                #{empm_stts_cn},
+                #{accr_rqis_cn},
+                #{majr_rqis_cn},
+                #{splz_rlm_rqis_cn},
+                #{prcp_cn},
+                #{prcp_lmtt_trgt_cn},
+                #{cnsg_nmor},
+                #{rqut_prd_cn},
+                #{rqut_proc_cn},
+                #{pstn_papr_cn},
+                #{jdgn_pres_cn},
+                #{rqut_urla},
+                NOW(),
+                #{poly_rlm_cd},
+                #{srch_poly_biz_secd}
+                )
+    </insert>
+
+    <!-- 메인페이지 블럭에 띄울 최신글 10개 가져오기 -->
+    <select id="getMainPolicyList" resultType="ApiResultDTO">
+        SELECT POLY_BIZ_SJNM, SEQ
+        FROM POLY_INFO
+        ORDER BY REG_DT DESC
+            LIMIT 5;
+    </select>
+
+    <!-- 정책 게시판 진입(리스트 가져오기) -->
+    <select id="getCountTable" resultType="ApiResultDTO">
+        SELECT SEQ, POLY_BIZ_SJNM, POLY_ITCN_CN, RQUT_PRD_CN,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM POLY_INFO
+    </select>
+
+    <!-- 지역 선택 후 정책 리스트 가져오기 -->
+    <select id="getCountAreaList" parameterType="ApiResultDTO" resultType="ApiResultDTO">
+        SELECT SEQ, POLY_BIZ_SJNM, POLY_ITCN_CN, RQUT_PRD_CN,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM POLY_INFO
+        WHERE SRCH_POLY_BIZ_SECD = #{areaCode}
+    </select>
+
+    <!-- 정책 분야 선택 후 정책 리스트 가져오기 -->
+    <select id="getCountCategoryList" parameterType="ApiResultDTO" resultType="ApiResultDTO">
+        SELECT SEQ, POLY_BIZ_SJNM, POLY_ITCN_CN, RQUT_PRD_CN,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM POLY_INFO
+        WHERE POLY_RLM_CD = #{polyCode}
+    </select>
+
+    <!-- 지역 + 정책 분야 선택 후 정책 리스트 가져오기 -->
+    <select id="getCountOptionList" parameterType="ApiResultDTO" resultType="ApiResultDTO">
+        SELECT SEQ, POLY_BIZ_SJNM, POLY_ITCN_CN, RQUT_PRD_CN,
+               DATE_FORMAT(REG_DT, '%y-%m-%d') AS REG_DT
+        FROM POLY_INFO
+        WHERE POLY_RLM_CD = #{polyCode} AND SRCH_POLY_BIZ_SECD = #{areaCode}
+    </select>
+
+    <!-- 정책 상세보기 -->
+    <select id="getPolicyInfo" parameterType="ApiResultDTO" resultType="ApiResultDTO">
+        SELECT *
+        FROM POLY_INFO
+        WHERE SEQ = #{seq}
+    </select>
+
+</mapper>

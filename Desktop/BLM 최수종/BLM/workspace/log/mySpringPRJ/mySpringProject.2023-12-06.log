@@ -1,0 +1,40 @@
+2023-12-06 23:23:07 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1417 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:23:07 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:23:10 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 23.409 seconds (JVM running for 29.326)
+2023-12-06 23:23:40 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:23:40 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:25:07 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1476 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:25:07 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:25:09 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.418 seconds (JVM running for 28.37)
+2023-12-06 23:25:11 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:25:11 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:25:11 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:25:11 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:41:38 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1703 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:41:38 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:41:40 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.456 seconds (JVM running for 28.545)
+2023-12-06 23:42:42 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1718 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:42:42 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:42:44 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.328 seconds (JVM running for 28.134)
+2023-12-06 23:42:48 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:42:48 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:49:28 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1813 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:49:28 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:49:30 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.331 seconds (JVM running for 28.494)
+2023-12-06 23:49:34 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:49:34 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:52:43 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1866 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:52:43 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:52:45 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.758 seconds (JVM running for 28.898)
+2023-12-06 23:52:52 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:52:52 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:56:31 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1913 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:56:31 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:56:34 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.77 seconds (JVM running for 29.089)
+2023-12-06 23:56:37 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:56:37 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.
+2023-12-06 23:59:16 [INFO ] kopo.poly.BlmUserServiceApplication - Starting BlmUserServiceApplication using Java 1.8.0_292 on SYui-MacBookPro.local with PID 1955 (/Users/soyoung/IdeaProjects/BLM/target/classes started by soyoung in /Users/soyoung/IdeaProjects/BLM)
+2023-12-06 23:59:16 [INFO ] kopo.poly.BlmUserServiceApplication - The following 1 profile is active: "prod"
+2023-12-06 23:59:18 [INFO ] kopo.poly.BlmUserServiceApplication - Started BlmUserServiceApplication in 22.313 seconds (JVM running for 28.409)
+2023-12-06 23:59:23 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 실행합니다.
+2023-12-06 23:59:23 [INFO ] kopo.poly.controller.StoreController - kopo.poly.controller.StoreController.점포 등록 페이지로 이동, 컨트롤러 종료합니다.

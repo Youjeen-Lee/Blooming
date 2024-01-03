@@ -1,0 +1,3 @@
+2023-12-27 02:28:22 [INFO ] k.p.BlmUserServiceApplicationTests - Starting BlmUserServiceApplicationTests using Java 1.8.0_191 on DESKTOP-BO7MENR with PID 10108 (started by goi21 in C:\Users\goi21\Desktop\BLM 최수종\BLM)
+2023-12-27 02:28:22 [INFO ] k.p.BlmUserServiceApplicationTests - The following 1 profile is active: "prod"
+2023-12-27 02:28:30 [INFO ] k.p.BlmUserServiceApplicationTests - Started BlmUserServiceApplicationTests in 9.282 seconds (JVM running for 12.759)

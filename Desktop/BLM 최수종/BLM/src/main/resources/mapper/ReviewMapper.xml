@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="kopo.poly.persistance.mapper.IReviewMapper">
+
+    <!-- 내 리뷰 가져오기 -->
+    <select id="getMyReviewList" parameterType="UserInfoDTO" resultType="ReviewDTO">
+        SELECT REVIEW_SEQ, STORE_SEQ, CONTENTS, DATE_FORMAT(REG_DT, '%Y-%m-%d') AS REG_DT
+        FROM REVIEW
+        WHERE USER_ID = #{user_id}
+        ORDER BY REG_DT DESC
+    </select>
+
+
+    <!-- 리뷰 리스트 쿼리(게시판 글 번호에서만 가져와야함, mapper는 '='를 쓴다)-->
+    <select id="getReviewList" resultType="ReviewDTO" parameterType="ReviewDTO">
+        SELECT REVIEW_SEQ, STORE_SEQ, CONTENTS, USER_ID,
+               DATE_FORMAT(REG_DT, '%y-%m-%d %H:%i') AS REG_DT
+        FROM REVIEW
+        WHERE STORE_SEQ = #{store_seq}
+        ORDER BY REVIEW_SEQ DESC
+    </select>
+
+    <!-- 리뷰 등록 쿼리 -->
+    <insert id="insertReviewInfo" parameterType="ReviewDTO">
+        INSERT INTO REVIEW
+        (
+            REVIEW_SEQ, STORE_SEQ, CONTENTS, USER_ID, REG_DT
+        )
+        VALUES(
+                      (SELECT IFNULL(MAX(A.REVIEW_SEQ), 0) + 1 FROM REVIEW A),
+                      #{store_seq},  #{contents}, #{user_id}, NOW()
+              )
+    </insert>
+
+
+
+    <!-- 리뷰 수정 쿼리 -->
+    <update id="updateReviewInfo" parameterType="ReviewDTO">
+        UPDATE REVIEW SET
+            CONTENTS = #{contents}
+        WHERE
+            REVIEW_SEQ = #{review_seq}
+
+    </update>
+
+    <!-- 리뷰 삭제 쿼리 -->
+    <delete id="deleteReviewInfo" parameterType="ReviewDTO">
+        DELETE FROM REVIEW
+        WHERE REVIEW_SEQ = #{review_seq}
+    </delete>
+
+</mapper>

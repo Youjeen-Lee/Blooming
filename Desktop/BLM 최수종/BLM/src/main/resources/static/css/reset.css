@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NotoSans-Light.woff2) format('woff2'),
+    url(../font/NotoSans-Light.woff) format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSans-Regular.woff2) format('woff2'),
+    url(../font/NotoSans-Regular.woff) format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/NotoSans-Medium.woff2) format('woff2'),
+    url(../font/NotoSans-Medium.woff) format('woff')
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/NotoSans-Bold.woff2) format('woff2'),
+    url(../font/NotoSans-Bold.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'BMDOHYEON';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/BMDOHYEON.woff2) format('woff2'),
+    url(../font/BMDOHYEON.woff) format('woff'),
+    url(../font/BMDOHYEON.otf) format('opentype');
+}
+
+* {margin:0; padding:0}
+html, body {height: 100%}
+body {font-family: 'Noto Sans KR',dotum,'돋움',arial,sans-serif; color: #666; font-weight: 400; line-height: 1.53; letter-spacing: -0.025em; -webkit-text-size-adjust: none; word-break: keep-all; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; -webkit-overflow-scrolling:touch;}
+ol, ul, li ,dl, dt, dd {list-style: none outside none}
+hr {display:none}
+fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr {border: 0}
+address, caption, cite, code, dfn, em, strong, th, var {font-style: normal}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none}
+table {width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed}
+caption {left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
+img {vertical-align: top; max-width: 100%}
+a {text-decoration: none; color: #666}
+select, input, textarea, button {font-family: 'Noto Sans KR',dotum,'돋움',arial,sans-serif}
+select, input[type="text"], input[type="password"], textarea {border-radius: 0; box-sizing: border-box}
+button {border-radius: 0; margin: 0; overflow: visible; text-transform: none; -webkit-appearance: button; cursor: pointer; border: 0; background: none}
+input::-ms-clear {display: none}
+select::-ms-expand {display: none}
+select {-webkit-appearance:none; -moz-appearance:none; appearance:none}
+textarea {resize: none}
+label {cursor: pointer}
